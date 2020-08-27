@@ -1,0 +1,296 @@
+:root {
+  --primary-text-color: black;
+  --title-text-color: black;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primery-grey-color: #757575;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid tomato;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.page-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.page-header .flexbox {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Лого */
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: black;
+  text-decoration-line: none;
+  margin-right: 93px;
+}
+
+.logo-part {
+  color: var(--accent-color);
+}
+
+/* Линки */
+
+a {
+  text-decoration-line: none;
+  color: var(--accent-color);
+}
+a:focus,
+a:hover {
+  color: orange;
+}
+
+li {
+  list-style-type: none;
+}
+
+.mail {
+  color: var(--accent-color);
+}
+
+.mail:hover {
+  color: orange;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.studio {
+  color: var(--accent-color);
+}
+
+.studio:hover {
+  color: orange;
+}
+
+/* Заголовки */
+
+h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+  height: 600px;
+  padding-top: 200px;
+}
+
+.hero-title {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
+p {
+  color: var(--primery-grey-color);
+}
+
+.activity {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.activity-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Преимущества */
+
+.advantages {
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefits {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Команда */
+
+.name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+}
+
+.team-item {
+  text-align: center;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-section {
+  background-color: #f5f4fa;
+}
+
+/* Контакты */
+
+address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.address-container {
+  display: block;
+  flex-direction: column;
+  background-color: #2f303a;
+}
+
+.contact {
+  color: var(--accent-color);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+/* Кнопки */
+
+button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: black;
+  background-color: white;
+}
+
+button:focus,
+button:hover {
+  color: orange;
+}
+
+.main-button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+}
+
+.portfolio {
+  color: var(--accent-color);
+}
+
+/* Работы */
+
+.works {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2.5;
+  letter-spacing: 0.06em;
+}
+.logo-second-part {
+  color: #ffffff;
+}
