@@ -35,7 +35,6 @@ body {
 
 .page-header {
   padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .page-header .flexbox {
@@ -145,7 +144,7 @@ h1 {
 
 .hero-title {
   margin-top: 0px;
-  margin-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 h2 {
@@ -276,6 +275,7 @@ button:hover {
   left: 700px;
   top: 430px;
   border-radius: 4px;
+  margin-bottom: 200px;
 }
 
 .portfolio {
