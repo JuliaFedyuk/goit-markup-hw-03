@@ -214,6 +214,7 @@ p {
 
 .team-item {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .team-item:not(:last-child) {
