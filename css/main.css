@@ -250,9 +250,9 @@ address {
 }
 
 .address-container {
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-color: #2f303a;
+  padding-right: -50px;
 }
 
 .contact {
@@ -328,13 +328,23 @@ button:hover {
 .work {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 0;
 }
 
 .work-item {
   width: calc(100%-30 * 2) / 3;
-  margin-left: 30px;
   margin-bottom: 30px;
-  margin-left: auto;
+  margin-right: 30px;
+}
+
+.work .work-item img {
+  width: 100%;
+  height: auto;
+}
+
+.work-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .work-item {
@@ -343,5 +353,4 @@ button:hover {
   border: 1px solid #eeeeee;
 
   height: 404px;
-  width: 370px;
 }
