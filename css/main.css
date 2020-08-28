@@ -70,10 +70,15 @@ body {
   color: black;
   text-decoration-line: none;
   margin-right: 93px;
+  display: block;
 }
 
 .logo-part {
   color: var(--accent-color);
+}
+
+.logo-second-part {
+  color: #ffffff;
 }
 
 /* Линки */
@@ -101,6 +106,7 @@ li {
 
 .contact-header {
   display: flex;
+  margin-left: auto;
 }
 
 .menu-item:not(:last-child) {
@@ -178,6 +184,7 @@ p {
 .advantages {
   display: flex;
   justify-content: space-around;
+  background-color: aqua;
 }
 
 .benefits {
@@ -188,7 +195,6 @@ p {
 }
 
 .advantages-item {
-  padding-right: 15px;
 }
 
 .advantages:first-child {
@@ -197,6 +203,10 @@ p {
 
 .advantages-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.activity-section {
+  margin-top: -94px;
 }
 
 /* Команда */
@@ -240,7 +250,8 @@ address {
 }
 
 .address-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: #2f303a;
 }
 
@@ -286,7 +297,7 @@ button:hover {
 
 /* Работы */
 
-.works {
+/*.works {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -295,4 +306,42 @@ button:hover {
 }
 .logo-second-part {
   color: #ffffff;
+} */
+
+/* Портфолио */
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-item {
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  width: calc(100%-30 * 2) / 3;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+.work-item {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+
+  height: 404px;
+  width: 370px;
 }
