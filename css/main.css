@@ -35,11 +35,11 @@ body {
 
 .page-header {
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .page-header .flexbox {
   align-items: center;
-  justify-content: flex-end;
 }
 
 .list {
@@ -99,13 +99,12 @@ li {
   color: orange;
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 50px;
+.contact-header {
+  display: flex;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
+.menu-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 nav {
@@ -138,8 +137,8 @@ h1 {
 .hero {
   text-align: center;
   background-color: #2f303a;
-  height: 600px;
   padding-top: 200px;
+  margin-top: -32px;
 }
 
 .hero-title {
@@ -174,10 +173,6 @@ p {
   padding: 0;
 }
 
-.activity-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 /* Преимущества */
 
 .advantages {
@@ -190,6 +185,14 @@ p {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.advantages-item {
+  padding-right: 15px;
+}
+
+.advantages:first-child {
+  padding-left: 15px;
 }
 
 .advantages-item:not(:last-child) {
@@ -238,16 +241,12 @@ address {
 
 .address-container {
   display: block;
-  flex-direction: column;
   background-color: #2f303a;
 }
 
 .contact {
   color: var(--accent-color);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin-left: auto;
+  display: block;
 }
 
 /* Кнопки */
@@ -269,6 +268,7 @@ button:hover {
 }
 
 .main-button {
+  font-family: Roboto, sans-serif;
   background-color: var(--accent-color);
   color: #ffffff;
   width: 200px;
@@ -277,6 +277,7 @@ button:hover {
   top: 430px;
   border-radius: 4px;
   margin-bottom: 200px;
+  border: none;
 }
 
 .portfolio {

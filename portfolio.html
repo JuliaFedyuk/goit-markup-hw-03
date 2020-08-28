@@ -14,38 +14,42 @@
   <body>
     <!--Шапка сайта-->
 
-    <div class="container">
-      <header>
-        <nav>
-          <a href="/">
-            <p class="logo"><span class="logo-part">Web</span>Studio</p>
-          </a>
-          <ul>
-            <li>
-              <a href="./index.html">
-                <span class="studio-link"> Студия</span></a
-              >
-            </li>
-            <li>
-              <span class="portfolio">Портфолио</span>
-            </li>
-            <li>Контакты</li>
-          </ul>
-        </nav>
-        <ul>
-          <li>
+    <header class="page-header">
+      <div class="container flexbox">
+        <div class="nav-container">
+          <nav class="navigation flexbox">
+            <a href="/">
+              <p class="logo"><span class="logo-part">Web</span>Studio</p>
+            </a>
+            <div class="main-nav">
+              <ul class="list menu-list flexbox">
+                <li class="menu-item">
+                  <a href="./index.html">
+                    <span class="studio-link"> Студия</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <span class="portfolio">Портфолио</span>
+                </li>
+                <li class="menu-item">Контакты</li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <ul class="contact">
+          <li class="contact-item">
             <span class="mail"
               ><a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </span>
           </li>
-          <li>
+          <li class="contact-item">
             <span class="phone"
               ><a href="tel:+38-096-111-11-11">+38-096-111-11-11</a>
             </span>
           </li>
         </ul>
-      </header>
-    </div>
+      </div>
+    </header>
 
     <!--Меню-->
 
@@ -118,9 +122,12 @@
 
     <!--Футер-->
 
-    <div class="container">
-      <footer>
-        <p class="logo"><span class="logo-part">Web</span>Studio</p>
+    <footer>
+      <div class="container section address-container">
+        <p class="logo">
+          <span class="logo-part">Web</span
+          ><span class="logo-second-part">Studio</span>
+        </p>
         <address>
           г. Киев, пр-т Леси Украинки, 26 <br />
           <span class="contact">
@@ -128,7 +135,7 @@
             <a href="tel:+38-096-111-11-11">+38-096-111-11-11</a>
           </span>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
