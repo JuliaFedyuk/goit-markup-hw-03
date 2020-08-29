@@ -131,6 +131,18 @@ nav {
   color: var(--accent-color);
 }
 
+.studio-link {
+  color: black;
+}
+
+.studio-link:hover {
+  color: var(--accent-color);
+}
+
+.portfolio-link {
+  color: black;
+}
+
 /* Заголовки */
 
 h1 {
