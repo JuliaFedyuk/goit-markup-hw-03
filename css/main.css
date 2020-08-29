@@ -33,7 +33,6 @@ body {
 }
 
 .page-header {
-  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -49,11 +48,6 @@ body {
 
 .contact-item:not(:last-child) {
   margin-right: 50px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* Лого */
@@ -84,11 +78,12 @@ body {
 
 a {
   text-decoration-line: none;
-  color: var(--accent-color);
+  color: grey;
 }
+
 a:focus,
 a:hover {
-  color: orange;
+  color: var(--accent-color);
 }
 
 li {
@@ -100,7 +95,7 @@ li {
 }
 
 .mail:hover {
-  color: orange;
+  color: var(--accent-color);
 }
 
 .contact-header {
@@ -111,12 +106,14 @@ li {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-
-  color: #757575;
 }
 
 .menu-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.menu-item {
+  color: var(--primary-text-color);
 }
 
 nav {
@@ -125,12 +122,13 @@ nav {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
+
 .studio {
   color: var(--accent-color);
 }
 
 .studio:hover {
-  color: orange;
+  color: var(--accent-color);
 }
 
 /* Заголовки */
@@ -149,6 +147,7 @@ h1 {
 .hero {
   text-align: center;
   background-color: #2f303a;
+  width: auto;
   padding-top: 200px;
   margin-top: -32px;
 }
@@ -197,6 +196,8 @@ p {
 .advantages {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 94px;
+  margin-top: 94px;
 }
 
 .benefits {
@@ -215,7 +216,7 @@ p {
 }
 
 .activity-section {
-  margin-top: -94px;
+  padding-bottom: 94px;
 }
 
 /* Команда */
@@ -241,7 +242,6 @@ p {
 .team-item {
   text-align: center;
   background-color: #ffffff;
-  width: 100%;
   height: 368px;
 }
 
@@ -251,6 +251,9 @@ p {
 
 .team-section {
   background-color: #f5f4fa;
+  width: auto;
+  padding-bottom: 94px;
+  padding-top: 50px;
 }
 
 /* Контакты */
@@ -267,11 +270,16 @@ address {
 .address-container {
   display: block;
   background-color: #2f303a;
+  width: auto;
 }
 
 .contact {
   color: var(--accent-color);
   display: block;
+}
+
+.contact-item {
+  color: var(--primery-grey-color);
 }
 
 /* Кнопки */
@@ -292,7 +300,8 @@ button {
 
 button:focus,
 button:hover {
-  color: orange;
+  color: white;
+  background-color: var(--accent-color);
 }
 
 .main-button {
@@ -320,8 +329,13 @@ button:hover {
 
 .footer-address {
   margin-left: 30px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
+.footer-address .logo {
+  margin-bottom: 20px;
+}
 /* Работы */
 
 .works {
@@ -335,9 +349,9 @@ button:hover {
 .logo-second-part {
   color: #ffffff;
 }
-*/
 
 /* Портфолио */
+
 ul {
   list-style: none;
 }
@@ -395,4 +409,12 @@ ul {
 
 .work-information {
   margin-left: 24px;
+}
+
+.contact {
+  margin-top: 9px;
+}
+
+.work-container {
+  padding-bottom: 94px;
 }
