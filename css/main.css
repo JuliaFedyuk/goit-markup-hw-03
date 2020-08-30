@@ -47,6 +47,16 @@ body {
   padding: 0;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 9px;
+}
+
+.contact a:first-child {
+  margin-bottom: 8px;
+}
+
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
