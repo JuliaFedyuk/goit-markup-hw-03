@@ -18,6 +18,7 @@ html {
 body {
   background-color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
 
 .container {
@@ -281,8 +282,6 @@ address {
 
 .address-container {
   display: block;
-  background-color: #2f303a;
-  width: auto;
 }
 
 .contact {
@@ -339,8 +338,12 @@ button:hover {
   color: var(--accent-color);
 }
 
+footer {
+  background-color: #2f303a;
+}
+
 .footer-address {
-  margin-left: 100px;
+  margin-left: 15px;
   padding-bottom: 60px;
   padding-top: 60px;
 }
