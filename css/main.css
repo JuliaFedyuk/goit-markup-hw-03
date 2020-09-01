@@ -337,11 +337,6 @@ button:hover {
   border: none;
 }
 
-.button-container {
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
-
 .portfolio {
   color: var(--accent-color);
 }
@@ -377,6 +372,10 @@ ul {
   padding-inline-start: 0;
 }
 
+.button-section {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 .buttons {
   display: flex;
   flex-direction: row;
@@ -401,6 +400,10 @@ ul {
   margin-right: 8px;
 }
 
+.work-section {
+  padding-bottom: 78px;
+}
+
 .work {
   display: flex;
   flex-wrap: wrap;
@@ -411,7 +414,6 @@ ul {
 .work-item {
   width: calc((100% - 60px) / 3);
   margin-bottom: 30px;
-  padding-bottom: 20px;
   box-sizing: border-box;
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -432,7 +434,4 @@ ul {
 
 .contact {
   margin-top: 9px;
-}
-.work-container {
-  margin-bottom: 78px;
 }
